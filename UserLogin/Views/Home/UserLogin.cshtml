@@ -1,0 +1,18 @@
+﻿@model User
+<!--<form asp-controller="Home" asp-action="UserSummary">-->
+<div asp-validation-summary="All" class="text-danger"></div>
+<form method="post">
+<p>User ID </p>
+<input type="text" name="UserId" />
+
+<p>Password</p>
+<input type="password" name="Password" minlength="5" maxlength="12" />
+
+<p>Age</p>
+<input type="number" name="Age" max="130" />
+@*<input type="tel" name="Age" />*@
+
+<br />
+<br />
+<input type="submit" />
+</form>
